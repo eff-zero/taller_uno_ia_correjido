@@ -125,3 +125,15 @@ presupuesto = float(input('Ingrese el monto presupuestal: '))
 for area, porcentaje in areas.items():
     vArea = presupuesto*porcentaje
     print(f'Al area de {area} le corresponde ${vArea:,}')
+
+# 15.
+vAlquiler = 1500
+cPeliculas = int(input('Ingrese la cantidad de peliculas a alquilar: '))
+nDias = int(input('Ingrese los dias que alquilara las peliculas: '))
+vUnaPelicula = nDias*vAlquiler
+pagoBruto = vUnaPelicula*nDias
+pagoDescuento = pagoBruto - vUnaPelicula
+if cPeliculas > 1:
+    print(f'El monto a cancelar es ${pagoDescuento:,}')
+elif cPeliculas == 1:
+    print(f'El monto a cancelar es ${vUnaPelicula:,}')
