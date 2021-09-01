@@ -54,3 +54,18 @@ saldoInicial = float(input('Ingrese su saldo: '))
 interes = (1.5)/100
 saldoFinal = saldoInicial + (saldoInicial*interes)
 print(f'Su saldo final con interes es ${saldoFinal:,}')
+
+# 8.
+sueldo = float(input('Ingrese su sueldo inicial: '))
+totalDescuento = 0
+descuentos = {'Politica Publica': 0.01,
+              'Seguro Social': 0.04,
+              'Seguro Forzoso': 0.005,
+              'Caja de Ahorro': 0.05
+              }
+for tipoDescuento, valorDescuento in descuentos.items():
+    iDescuento = valorDescuento*sueldo
+    print(f'El descuento en {tipoDescuento} es {iDescuento}')
+    totalDescuento = totalDescuento + iDescuento
+sueldoFinal = sueldo - totalDescuento
+print(f'Su sueldo final es ${sueldoFinal:,}')
