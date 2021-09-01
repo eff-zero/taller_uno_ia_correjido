@@ -69,3 +69,16 @@ for tipoDescuento, valorDescuento in descuentos.items():
     totalDescuento = totalDescuento + iDescuento
 sueldoFinal = sueldo - totalDescuento
 print(f'Su sueldo final es ${sueldoFinal:,}')
+
+# 9.
+palabras = int(input('Ingrese el numero de palabras: '))
+centimetros = float(input('Ingrese los cm a utilizar: '))
+colores = int(input('Ingrese la cantidad de colores a utilizar: '))
+vPalabra = 20000
+vCentimetro = 15000
+vColor = 25000
+vPalabras = vPalabra*palabras
+vCentimetros = vCentimetro*centimetros
+vColores = vColor*colores
+vTotal = vPalabras + vCentimetros + vColores
+print(f'El valor total para su aviso clasificado es ${vTotal:,}')
