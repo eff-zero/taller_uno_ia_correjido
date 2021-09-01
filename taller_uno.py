@@ -82,3 +82,14 @@ vCentimetros = vCentimetro*centimetros
 vColores = vColor*colores
 vTotal = vPalabras + vCentimetros + vColores
 print(f'El valor total para su aviso clasificado es ${vTotal:,}')
+
+# 10.
+years = int(input('Ingrese los años que lleva trabajando en la empresa: '))
+oneYear = 100000
+moreYears = 120000
+if years == 1:
+    print('Su bonificacion es de {oneYear:,}')
+elif years > 1:
+    print(f'Su bonificacion es de ${moreYears*years:,}')
+else:
+    print('Numero de años invalido')
