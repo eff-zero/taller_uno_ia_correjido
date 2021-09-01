@@ -110,3 +110,11 @@ if montoFinal < montoInicial:
 else:
     costoLlamada = (montoFinal-montoInicial) / 1.20
     print(f'El costo de la llamada es ${costoLlamada:,}')
+
+# 13.
+vRevelado = 1500
+iva = 0.16
+nFotos = int(input('Ingrese el numero de fotos a revelar: '))
+valorBruto = vRevelado * nFotos
+valorConIva = valorBruto + (valorBruto*iva)
+print(f'El valor con IVA del revelado de las fotos es ${valorConIva:,}')
