@@ -156,3 +156,14 @@ elif days > 1:
     print(f'Su monto a pagar es de {moreDays*days:,}')
 else:
     print('Numero de dias invalido')
+
+# 18.
+interes = 0.24
+prestamo = float(input('Ingrese el valor que desea prestar: '))
+cEspeciales = 4
+cOrdinarias = 20
+montoTotal = prestamo + (prestamo*interes)
+mitadMonto = montoTotal / 2
+print(f'El monto total a pagar es de ${montoTotal:,}')
+print(f'Las cuotas especiales quedan en {mitadMonto/cEspeciales:,}')
+print(f'Las cuotas ordianarias quedan en {mitadMonto/cOrdinarias:,}')
