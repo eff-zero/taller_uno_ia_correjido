@@ -48,3 +48,9 @@ pPersona3 = 100-(pPersona1 + pPersona2)
 print(f'El porcentaje correspondiente para la persona #1 es {pPersona1}%')
 print(f'El porcentaje correspondiente para la persona #2 es {pPersona2}%')
 print(f'El porcentaje correspondiente para la persona #3 es {pPersona3}%')
+
+# 7.
+saldoInicial = float(input('Ingrese su saldo: '))
+interes = (1.5)/100
+saldoFinal = saldoInicial + (saldoInicial*interes)
+print(f'Su saldo final con interes es ${saldoFinal:,}')
