@@ -36,3 +36,15 @@ print(f'El valor de la masa es {masa}')
 edad = int(input('Ingrese su edad: '))
 pulsaciones = (200-edad)/10
 print(f'El numero de pulsaciones que debe tener cada 10s es {pulsaciones}')
+
+# 6.
+cPersona1 = float(input('Ingrese la cantidad de $ de la personas #1: '))
+cPersona2 = float(input('Ingrese la cantidad de $ de la personas #2: '))
+cPersona3 = float(input('Ingrese la cantidad de $ de la personas #3: '))
+total = cPersona1 + cPersona2 + cPersona3
+pPersona1 = (cPersona1*100)/total
+pPersona2 = (cPersona2*100)/total
+pPersona3 = 100-(pPersona1 + pPersona2)
+print(f'El porcentaje correspondiente para la persona #1 es {pPersona1}%')
+print(f'El porcentaje correspondiente para la persona #2 es {pPersona2}%')
+print(f'El porcentaje correspondiente para la persona #3 es {pPersona3}%')
