@@ -93,3 +93,11 @@ elif years > 1:
     print(f'Su bonificacion es de ${moreYears*years:,}')
 else:
     print('Numero de años invalido')
+
+# 11.
+pagos = {'hora': 20000, 'descuento': 0.05}
+nHoras = int(input('Ingrese el numero de horas trabajadas: '))
+pagoNeto = nHoras*pagos['hora']
+descuento = pagoNeto*pagos['descuento']
+pagoFinal = pagoNeto - descuento
+print(f'Descuento de Caja ${descuento:,}. Su pago final es de ${pagoFinal:,}')
