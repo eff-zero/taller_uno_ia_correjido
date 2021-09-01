@@ -137,3 +137,11 @@ if cPeliculas > 1:
     print(f'El monto a cancelar es ${pagoDescuento:,}')
 elif cPeliculas == 1:
     print(f'El monto a cancelar es ${vUnaPelicula:,}')
+
+# 16.
+vTour = 25000
+iva = 0.12
+nPersonas = int(input('Ingrese el numero de personas: '))
+valorBruto = vTour * nPersonas
+valorConIva = valorBruto + (valorBruto * iva)
+print(f'El valor con IVA del tour es ${valorConIva:,}')
