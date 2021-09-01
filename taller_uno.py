@@ -145,3 +145,14 @@ nPersonas = int(input('Ingrese el numero de personas: '))
 valorBruto = vTour * nPersonas
 valorConIva = valorBruto + (valorBruto * iva)
 print(f'El valor con IVA del tour es ${valorConIva:,}')
+
+# 17.
+oneDay = 100000
+moreDays = 200000
+days = int(input('Ingrese los dias que se hospedará: '))
+if days == 1:
+    print(f'Su monto a pagar es de {oneDay:,}')
+elif days > 1:
+    print(f'Su monto a pagar es de {moreDays*days:,}')
+else:
+    print('Numero de dias invalido')
